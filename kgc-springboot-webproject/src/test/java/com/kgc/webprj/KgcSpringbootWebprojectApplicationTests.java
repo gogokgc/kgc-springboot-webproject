@@ -1,4 +1,4 @@
-package com.kgc.blog;
+package com.kgc.webprj;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
