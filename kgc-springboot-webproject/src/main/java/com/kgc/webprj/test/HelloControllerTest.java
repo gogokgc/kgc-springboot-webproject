@@ -1,4 +1,4 @@
-package com.kgc.webprj.controller;
+package com.kgc.webprj.test;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
