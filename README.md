@@ -1,8 +1,8 @@
 # kgc-springboot-webproject
 
-## IDE : STS
+### IDE : Spring Tool Suite4
 
-## Spring Starter Project
+### Spring Starter Project
   - Spring Boot DevTool
 	- Lombok
 	- Spring Data JPA
