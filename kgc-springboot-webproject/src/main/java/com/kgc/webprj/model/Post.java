@@ -22,7 +22,7 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 @Entity
-public class Board {
+public class Post {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -47,7 +47,7 @@ public class Board {
 
 	
 	@Builder
-	public Board(String title, String content, int count, User user) {
+	public Post(String title, String content, int count, User user) {
 		this.title = title;
 		this.content = content;
 		this.count = count;

@@ -29,8 +29,8 @@ public class Reply {
 	private String content;
 	
 	@ManyToOne
-	@JoinColumn(name = "boardId")
-	private Board board;
+	@JoinColumn(name = "postId")
+	private Post post;
 	
 	@ManyToOne
 	@JoinColumn(name = "userId")
@@ -41,10 +41,10 @@ public class Reply {
 
 	
 	@Builder
-	public Reply(String content, Board board, User user) {
+	public Reply(String content, Post board, User user) {
 		super();
 		this.content = content;
-		this.board = board;
+		this.post = board;
 	}
 	
 	
