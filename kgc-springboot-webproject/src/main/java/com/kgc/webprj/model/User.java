@@ -11,15 +11,12 @@ import javax.persistence.Id;
 import org.hibernate.annotations.ColumnDefault;
 import org.hibernate.annotations.CreationTimestamp;
 
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Getter
 @NoArgsConstructor
-@AllArgsConstructor
-@Builder
 @Entity
 public class User {
 
@@ -41,4 +38,15 @@ public class User {
 	
 	@CreationTimestamp // 시간자동입력
 	private Timestamp createDate;
+
+	
+	@Builder
+	public User(String username, String password, String email, String role) {
+		this.username = username;
+		this.password = password;
+		this.email = email;
+		this.role = role;
+	}
+	
+	
 }
