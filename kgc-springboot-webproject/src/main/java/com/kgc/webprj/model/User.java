@@ -11,6 +11,15 @@ import javax.persistence.Id;
 import org.hibernate.annotations.ColumnDefault;
 import org.hibernate.annotations.CreationTimestamp;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Entity
 public class User {
 
@@ -18,7 +27,7 @@ public class User {
 	@GeneratedValue(strategy = GenerationType.IDENTITY) //auto_increment
 	private Long id;
 	
-	@Column(nullable = false, length = 20)
+	@Column(nullable = false, length = 20, unique = true)
 	private String username;
 	
 	@Column(nullable = false, length = 100)
