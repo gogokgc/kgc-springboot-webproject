@@ -17,13 +17,13 @@ spring:
   jpa:
     open-in-view: true
     hibernate:
-      ddl-auto: create
+      ddl-auto: create # create, update
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
       use-new-id-generator-mappings: false
-    show-sql: true
+    show-sql: true # sql 콘솔출력
     properties:
-      hibernate.format_sql: true
+      hibernate.format_sql: true # sql 문장정리
 
   jackson:
     serialization:
