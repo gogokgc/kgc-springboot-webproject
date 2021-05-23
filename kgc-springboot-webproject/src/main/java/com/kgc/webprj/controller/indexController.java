@@ -11,4 +11,10 @@ public class indexController {
 		return "index";
 	}
 
+	@GetMapping("/joinMember")
+	public String joinMemeber() {
+		
+		return "joinMember";
+	}
+	
 }
